@@ -37,7 +37,7 @@ my first own library in C
 <hr>
   - `ft_memalloc`
     *** Prototype *** 
-    ```c++
+    ```C++
     void * ft_memalloc(size_t size);
     ```
     *** Description *** * Allocates (with malloc(3)) and returns a “fresh” memory area.
