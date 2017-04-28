@@ -44,18 +44,18 @@ my first own library in C
     **Description:** *Allocates (with malloc(3)) and returns a “fresh” memory area.
     The memory allocated is initialized to 0. If the allocation  fails, the function returns NULL.*
     
-    **Param. 1:*** *The size of the memory that needs to be allocated.*
+    **Param. 1:** *The size of the memory that needs to be allocated.*
     
     **Return value:** *The allocated memory area.*
     
     **Allowed libc functions:** *malloc(3)*
   - `ft_memdel`
   
-    *** Prototype ***
+    **Prototype:**
     ```c
     void ft_memdel(void **ap)
     ```
-    **Description** *Takes as a parameter the address of a memory area that needs
+    **Description:** *Takes as a parameter the address of a memory area that needs
     to be freed with free(3), then puts the pointer to NULL.*
     
     **Param. 1:** *A pointer’s address that needs its memory freed and set to NULL.*
@@ -65,11 +65,11 @@ my first own library in C
     **Allowed libc functions:** *free(3)*
   - `ft_strnew`
   
-    *** Prototype ***
+    ***Prototype:**
     ```c
     char * ft_strnew(size_t size)
     ```
-    **Description** *Allocates (with malloc(3)) and returns a “fresh” string ending
+    **Description:** *Allocates (with malloc(3)) and returns a “fresh” string ending
     with ’\0’. Each character of the string is initialized at
     ’\0’. If the allocation fails the function returns NULL.*
     
@@ -80,7 +80,7 @@ my first own library in C
     **Allowed libc functions:** *malloc(3)*
   - `ft_strdel`
   
-    *** Prototype ***
+    **Prototype:**
     ```c
     void ft_strdel(char **as)
     ```
