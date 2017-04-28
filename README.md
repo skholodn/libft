@@ -283,3 +283,243 @@ my first own library in C
     **Return value:** *The array of “fresh” strings result of the split.*
     
     **Allowed libc functions:** *malloc(3), free(3).*
+  - `ft_itoa`
+  
+    **Prototype:**
+    ```c
+    char * ft_itoa(int n);
+    ```
+    **Description** *Allocate (with malloc(3)) and returns a “fresh” string ending
+    with ’\0’ representing the integer n given as argument.
+    Negative numbers must be supported. If the allocation fails,
+    the function returns NULL.*
+    
+    **Param. 1:** *The integer to be transformed into a string.*
+    
+    **Return value:** *The string representing the integer passed as argument.*
+    
+    **Allowed libc functions:** *malloc(3).*
+  - `ft_putchar`
+  
+    **Prototype:**
+    ```c
+    void ft_putchar(char c);
+    ```
+    **Description** *Outputs the character c to the standard output.*
+    
+    **Param. 1:** *The character to output.*
+    
+    **Return value:** *None.*
+    
+    **Allowed libc functions:** *write(2).*
+  - `ft_putstr`
+  
+    **Prototype:**
+    ```c
+    void ft_putstr(char const *s);
+    ```
+    **Description** *Outputs the string s to the standard output.*
+    
+    **Param. 1:** *The string to output.*
+    
+    **Return value:** *None.*
+    
+    **Allowed libc functions:** *write(2).*
+  - `ft_putendl`
+  
+    **Prototype:**
+    ```c
+    void ft_putendl(char const *s);
+    ```
+    **Description** *Outputs the string s to the standard output followed by a ’\n’.*
+    
+    **Param. 1:** *The string to output.*
+    
+    **Return value:** *None.*
+    
+    **Allowed libc functions:** *write(2).*
+  - `ft_putnbr`
+  
+    **Prototype:**
+    ```c
+    void ft_putnbr(int n);
+    ```
+    **Description** *Outputs the integer n to the standard output.*
+    
+    **Param. 1:** *The integer to output.*
+    
+    **Return value:** *None.*
+    
+    **Allowed libc functions:** *write(2).*
+  - `ft_putchar_fd`
+  
+    **Prototype:**
+    ```c
+    void ft_putchar_fd(char c, int fd);
+    ```
+    **Description** *Outputs the char c to the file descriptor fd.*
+    
+    **Param. 1:** *The character to output.*
+    
+    **Param. 2:** *The file descriptor.*
+    
+    **Return value:** *None.*
+    
+    **Allowed libc functions:** *write(2).*
+  - `ft_putstr_fd`
+  
+    **Prototype:**
+    ```c
+    void ft_putstr_fd(char const *s, int fd);
+    ```
+    **Description** *Outputs the string s to the file descriptor fd.*
+    
+    **Param. 1:** *The string to output.*
+    
+    **Param. 2:** *The file descriptor.*
+    
+    **Return value:** *None.*
+    
+    **Allowed libc functions:** *write(2).*
+  - `ft_putendl_fd`
+  
+    **Prototype:**
+    ```c
+    void ft_putendl_fd(char const *s, int fd);
+    ```
+    **Description** *Outputs the string s to the file descriptor fd followed by a ’\n’.*
+    
+    **Param. 1:** *The string to output.*
+    
+    **Param. 2:** *The file descriptor.*
+    
+    **Return value:** *None.*
+    
+    **Allowed libc functions:** *write(2).*
+  - `ft_putnbr_fd`
+  
+    **Prototype:**
+    ```c
+    void ft_putnbr_fd(int n, int fd);
+    ```
+    **Description** *Outputs the integer n to the file descriptor fd.*
+    
+    **Param. 1:** *The integer to print.*
+    
+    **Param. 2:** *The file descriptor.*
+    
+    **Return value:** *None.*
+    
+    **Allowed libc functions:** *write(2).*
+    
+### Part 3 - Bonus part
+
+  - `ft_lstnew`
+    
+    **Prototype:**
+    ```c
+    t_list * ft_lstnew(void const *content, size_t content_size);
+    ```
+    **Description:** *Allocates (with malloc(3)) and returns a “fresh” link. The
+    variables content and content_size of the new link are initialized
+    by copy of the parameters of the function. If the parameter
+    content is nul, the variable content is initialized to
+    NULL and the variable content_size is initialized to 0 even
+    if the parameter content_size isn’t. The variable next is
+    initialized to NULL. If the allocation fails, the function returns
+    NULL.*
+    
+    **Param. 1:** *The content to put in the new link.*
+    
+    **Param. 2:** *The size of the content of the new link.*
+    
+    **Return value:** *The new link.*
+    
+    **Allowed libc functions:** *malloc(3), free(3).*
+  - `ft_lstdelone`
+    
+    **Prototype:**
+    ```c
+    void ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
+    ```
+    **Description:** *Takes as a parameter a link’s pointer address and frees the
+    memory of the link’s content using the function del given as
+    a parameter, then frees the link’s memory using free(3). The
+    memory of next musnt not be freed under any circumstance.
+    Finally, the pointer to the link that was just freed must be
+    set to NULL (quite similar to the function ft_memdel in the
+    mandatory part).*
+    
+    **Param. 1:** *The adress of a pointer to a link that needs to be freed.*
+    
+    **Return value:** *None.*
+    
+    **Allowed libc functions:** *free(3).*
+  - `ft_lstdel`
+    
+    **Prototype:**
+    ```c
+    void ft_lstdel(t_list **alst, void (*del)(void *, size_t));
+    ```
+    **Description:** *Takes as a parameter the adress of a pointer to a link and
+    frees the memory of this link and every successors of that link
+    using the functions del and free(3). Finally the pointer to
+    the link that was just freed must be set to NULL (quite similar
+    to the function ft_memdel from the mandatory part).*
+    
+    **Param. 1:** *The address of a pointer to the first link of a list that needs
+    to be freed.*
+    
+    **Return value:** *None.*
+    
+    **Allowed libc functions:** *free(3).*
+  - `ft_lstadd`
+    
+    **Prototype:**
+    ```c
+    void ft_lstadd(t_list **alst, t_list *new);
+    ```
+    **Description:** *Adds the element new at the beginnning of the list.*
+    
+    **Param. 1:** *The address of a pointer to the first link of a list.*
+    
+    **Param. 2:** *The link to add at the beginning of the list.*
+    
+    **Return value:** *None.*
+    
+    **Allowed libc functions:** *None.*
+  - `ft_lstiter`
+    
+    **Prototype:**
+    ```c
+    void ft_lstiter(t_list *lst, void (*f)(t_list *elem));
+    ```
+    **Description:** *Iterates the list lst and applies the function f to each link.*
+    
+    **Param. 1:** *A pointer to the first link of a list.*
+    
+    **Param. 2:** *The address of a function to apply to each link of a list.*
+    
+    **Return value:** *None.*
+    
+    **Allowed libc functions:** *None.*
+  - `ft_lstmap`
+    
+    **Prototype:**
+    ```c
+    t_list * ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
+    ```
+    **Description:** *Iterates a list lst and applies the function f to each link to
+    create a “fresh” list (using malloc(3)) resulting from the successive
+    applications of f. If the allocation fails, the function
+    returns NULL.*
+    
+    **Param. 1:** *A pointer’s to the first link of a list.*
+    
+    **Param. 2:** *The address of a function to apply to each link of a list.*
+    
+    **Return value:** *New list.*
+    
+    **Allowed libc functions:** *malloc(3), free(3).*
+
+
