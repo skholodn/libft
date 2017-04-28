@@ -2,7 +2,22 @@
 
 my first own library in C
 
+### Grade
 
+![Grade](https://github.com/adam-p/markdown-here/raw/master/src/common/images/libft_grade.png "Grade")
+
+---
+### Compile with `Makefile`
+
+####Available rules:
+  
+  - `make` *- compile all library.*
+  
+  - `make clean` *- clean all object files.*
+
+  - `make fclean` *- clean all object files and binary file.*
+  
+  - `make re` *- recompile all project.*
 
 ---
 
@@ -529,6 +544,3 @@ my first own library in C
     **Return value:** *New list.*
     
     **Allowed libc functions:** *malloc(3), free(3).*
-
----
-### Compile with `Makefile`
