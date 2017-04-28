@@ -4,7 +4,7 @@ my first own library in C
 
 ## Part 1 - Libc functions
 <hr>
-  - `memset`
+  - 'memset'
   - `bzero`
   - `memcpy`
   - `memccpy`
