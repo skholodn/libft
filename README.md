@@ -2,18 +2,10 @@
 <hr>
 my first own library in C
 
-``` html
-  - strlcat
-  - strchr
-  - strrchr
- ```
-
 ### Part 1 - Libc functions
-<hr>
+
   - `memset`
-  <br />
   - `bzero`
-  <br />
   - `memcpy`
   <br />
   - `memccpy`
