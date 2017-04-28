@@ -1,11 +1,13 @@
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
 # libft
 <hr>
 my first own library in C
 
 ### Part 1 - Libc functions
 <hr>
-* `memset`<br />
-* `bzero`<br />
+  - `memset`<br />
+  - `bzero`<br />
   - `memcpy`<br />
   - `memccpy`<br />
   - `memmove`<br />
