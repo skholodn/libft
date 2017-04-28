@@ -9,7 +9,7 @@ my first own library in C
 ---
 ### Compile with `Makefile`
 
-####Available rules:
+#### Available rules:
   
   - `make` *- compile all library.*
   
