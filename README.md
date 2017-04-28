@@ -10,21 +10,36 @@ my first own library in C
 
 ### Part 1 - Libc functions
 <hr>
-  - `memset`<br />
-  - `bzero`<br />
-  - `memcpy`<br />
-  - `memccpy`<br />
-  - `memmove`<br />
-  - `memchr`<br />
-  - `memcmp`<br />
-  - `strlen`<br />
-  - `strdup`<br />
-  - `strcpy`<br />
-  - `strncpy`<br />
-  - `strcat`<br />
-  - `strncat`<br />
-  - `strlcat`<br />
-  - `strchr`<br />
+  - `memset`
+  <br />
+  - `bzero`
+  <br />
+  - `memcpy`
+  <br />
+  - `memccpy`
+  <br />
+  - `memmove`
+  <br />
+  - `memchr`
+  <br />
+  - `memcmp`
+  <br />
+  - `strlen`
+  <br />
+  - `strdup`
+  <br />
+  - `strcpy`
+  <br />
+  - `strncpy`
+  <br />
+  - `strcat`
+  <br />
+  - `strncat`
+  <br />
+  - `strlcat`
+  <br />
+  - `strchr`
+  <br />
   - `strrchr`<br />
   - `strstr`<br />
   - `strnstr`<br />
