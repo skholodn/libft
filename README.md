@@ -4,34 +4,34 @@ my first own library in C
 
 ### Part 1 - Libc functions
 <hr>
-  - 'memset'
-  - `bzero`
-  - `memcpy`
-  - `memccpy`
-  - `memmove`
-  - `memchr`
-  - `memcmp`
-  - `strlen`
-  - `strdup`
-  - `strcpy`
-  - `strncpy`
-  - `strcat`
-  - `strncat`
-  - `strlcat`
-  - `strchr`
-  - `strrchr`
-  - `strstr`
-  - `strnstr`
-  - `strcmp`
-  - `strncmp`
-  - `atoi`
-  - `isalpha`
-  - `isdigit`
-  - `isalnum`
-  - `isascii`
-  - `isprint`
-  - `toupper`
-  - `tolower`
+* `memset`<br />
+* `bzero`<br />
+  - `memcpy`<br />
+  - `memccpy`<br />
+  - `memmove`<br />
+  - `memchr`<br />
+  - `memcmp`<br />
+  - `strlen`<br />
+  - `strdup`<br />
+  - `strcpy`<br />
+  - `strncpy`<br />
+  - `strcat`<br />
+  - `strncat`<br />
+  - `strlcat`<br />
+  - `strchr`<br />
+  - `strrchr`<br />
+  - `strstr`<br />
+  - `strnstr`<br />
+  - `strcmp`<br />
+  - `strncmp`<br />
+  - `atoi`<br />
+  - `isalpha`<br />
+  - `isdigit`<br />
+  - `isalnum`<br />
+  - `isascii`<br />
+  - `isprint`<br />
+  - `toupper`<br />
+  - `tolower`<br />
 
 ### Part 2 - Additional functions
 <hr>
