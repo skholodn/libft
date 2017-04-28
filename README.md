@@ -42,7 +42,7 @@ my first own library in C
   - `tolower`<br />
 
 ### Part 2 - Additional functions
-<hr>
+
   - `ft_memalloc`
     *** Prototype ***
     ```python
