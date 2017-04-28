@@ -1,6 +1,10 @@
 # libft
-<hr>
+
 my first own library in C
+
+
+
+---
 
 ### Part 1 - Libc functions
 
@@ -32,6 +36,8 @@ my first own library in C
   - `isprint`
   - `toupper`
   - `tolower`
+
+---
 
 ### Part 2 - Additional functions
 
@@ -411,7 +417,9 @@ my first own library in C
     **Return value:** *None.*
     
     **Allowed libc functions:** *write(2).*
-    
+
+---
+
 ### Part 3 - Bonus part
 
   - `ft_lstnew`
@@ -522,4 +530,5 @@ my first own library in C
     
     **Allowed libc functions:** *malloc(3), free(3).*
 
-
+---
+### Compile with `Makefile`
