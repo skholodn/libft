@@ -4,7 +4,7 @@ my first own library in C
 
 ### Grade
 
-![Grade](https://github.com/adam-p/markdown-here/raw/master/src/common/images/libft_grade.png "Grade")
+![Grade](https://github.com/skholodn/libft/blob/master/libft_grade.png "Grade")
 
 ---
 ### Compile with `Makefile`
